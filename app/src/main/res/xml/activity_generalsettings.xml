@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="mainpref">
+    <PreferenceCategory
+        android:title="Account Settings"
+        android:key="pref_key_acc_settings">
+        <EditTextPreference
+            android:key="setcode"
+            android:title="Set Access Code"
+            android:hint="Enter your password"
+            android:icon="@android:drawable/ic_lock_lock">
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Messages"
+        android:key="pref_key_mess_settings">
+        <CheckBoxPreference
+            android:key="pref_key_received"
+            android:summary="Monitor messages received"
+            android:title="Received"
+            android:defaultValue="false"/>
+        <PreferenceScreen
+            android:key="button_received"
+            android:dependency="pref_key_received"
+            android:title="Received messages from"
+            android:persistent="false"
+            android:icon="@drawable/ic_action_unread">
+            <CheckBoxPreference
+                android:key="pref_key_recunknown"
+                android:summary="Messages received to unknown contacts are monitored"
+                android:title="Unknown Numbers"
+                android:defaultValue="false"/>
+            <CheckBoxPreference
+                android:key="pref_key_reccontacts"
+                android:summary="Messages received to specific contacts are monitored"
+                android:title="Specific Contacts"
+                android:defaultValue="false"/>
+                <PreferenceScreen
+                    android:key="button_contactsR"
+                    android:title="Select from existing contacts"
+                    android:persistent="false"
+                    android:icon="@drawable/ic_action_user"
+                    android:dependency="pref_key_reccontacts">
+                </PreferenceScreen>
+            
+        </PreferenceScreen>
+        <CheckBoxPreference
+            android:key="pref_key_sent"
+            android:summary="Monitor messages sent"
+            android:title="Sent"
+            android:defaultValue="false"
+            />
+        <PreferenceScreen
+            android:key="button_sent"
+            android:dependency="pref_key_sent"
+            android:title="Sent messages to"
+            android:persistent="false"
+            android:icon="@drawable/ic_action_read">
+            <CheckBoxPreference
+                android:key="pref_key_sentunknown"
+                android:summary="Messages sent to unknown contacts are monitored"
+                android:title="Unknown Numbers"
+                android:defaultValue="false"/>
+            <CheckBoxPreference
+                android:key="pref_key_sentcontacts"
+                android:summary="Messages sent to specific contacts are monitored"
+                android:title="Specific Contacts"
+                android:defaultValue="false"/>
+            <PreferenceScreen
+                android:key="button_contactsS"
+                android:dependency="pref_key_sentcontacts"
+                android:title="Select from existing contacts"
+                android:persistent="false"
+                android:icon="@drawable/ic_action_user">
+            </PreferenceScreen>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Notification"
+        android:key="pref_key_notification_settings">
+        <CheckBoxPreference
+            android:key="pref_key_noti"
+            android:summary="Enable the application to notify you when a message is received from the client"
+            android:title="Enable Notification"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Manage SIM"
+        android:key="pref_key_sim_settings">
+        <CheckBoxPreference
+            android:key="pref_key_simalert"
+            android:summary="ON alert if SIM is changed"
+            android:title="Change SIM Aware"/>
+        <PreferenceScreen
+            android:key="button_simlist"
+            android:title="Add trusted SIM numbers"
+            android:persistent="false">
+            <EditTextPreference
+                android:key="sim1"
+                android:title="SIM 1"
+                android:hint="#1"
+                android:inputType="number"/>
+            <EditTextPreference
+                android:key="sim2"
+                android:title="SIM 2"
+                android:hint="#2"
+                android:inputType="number"/>
+            <EditTextPreference
+                android:key="sim3"
+                android:title="SIM 3"
+                android:hint="#3"
+                android:inputType="number"/>
+            <EditTextPreference
+                android:key="sim4"
+                android:title="SIM 4"
+                android:hint="#4"
+                android:inputType="number"/>
+            <EditTextPreference
+                android:key="sim5"
+                android:title="SIM 5"
+                android:hint="#5"
+                android:inputType="number"/>
+            <EditTextPreference
+                android:key="sim6"
+                android:title="SIM 6"
+                android:hint="#6"
+                android:inputType="number"/>
+            <EditTextPreference
+                android:key="sim7"
+                android:title="SIM 7"
+                android:hint="#7"
+                android:inputType="number"/>
+            <EditTextPreference
+                android:key="sim8"
+                android:title="SIM 8"
+                android:hint="#8"
+                android:inputType="number"/>
+            <EditTextPreference
+                android:key="sim9"
+                android:title="SIM 9"
+                android:hint="#9"
+                android:inputType="number"/>
+            <EditTextPreference
+                android:key="sim10"
+                android:title="SIM 10"
+                android:hint="#10"
+                android:inputType="number"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Tracking Settings"
+        android:key="pref_key_mode_settings">
+        <PreferenceScreen
+            android:key="button_servnum"
+            android:title="Enter tracker's mobile number"
+            android:persistent="false">
+            <EditTextPreference
+                android:key="pref_key_servnum1"
+                android:title="Contact #1"
+                android:hint="Contact #1"
+                android:inputType="number"/>
+            <CheckBoxPreference
+                android:key="isOffline"
+                android:summary="Check this if the contact #1 doesn't have Mobile Tracker installed."
+                android:title="Receive Offline"
+                android:defaultValue="false"/>
+            <EditTextPreference
+                android:key="pref_key_servnum2"
+                android:title="Contact #2"
+                android:hint="Contact #2"
+                android:inputType="number"/>
+            <CheckBoxPreference
+                android:key="isOffline2"
+                android:summary="Check this if the contact #2 doesn't have Mobile Tracker installed."
+                android:title="Receive Offline"
+                android:defaultValue="false"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

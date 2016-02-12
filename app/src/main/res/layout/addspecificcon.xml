@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5099CC00"
+                android:layout_margin="10dp">
+
+                <com.it.app.CircleButton
+                    android:id="@+id/btnselect1"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_new"
+                    android:gravity="center_vertical"
+                    app:cb_color="#99CC00"
+                    app:cb_pressed_ring_width="10dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Add contact #1."
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtshow1"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5099CC00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <com.it.app.CircleButton
+                    android:id="@+id/btnselect2"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_new"
+                    android:gravity="center_vertical"
+                    app:cb_color="#99CC00"
+                    app:cb_pressed_ring_width="10dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Add contact #2."
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtshow2"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5099CC00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <com.it.app.CircleButton
+                    android:id="@+id/btnselect3"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_new"
+                    android:gravity="center_vertical"
+                    app:cb_color="#99CC00"
+                    app:cb_pressed_ring_width="10dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Add contact #3."
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtshow3"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5099CC00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <com.it.app.CircleButton
+                    android:id="@+id/btnselect4"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_new"
+                    android:gravity="center_vertical"
+                    app:cb_color="#99CC00"
+                    app:cb_pressed_ring_width="10dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Add contact #4."
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtshow4"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5099CC00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <com.it.app.CircleButton
+                    android:id="@+id/btnselect5"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_new"
+                    android:gravity="center_vertical"
+                    app:cb_color="#99CC00"
+                    app:cb_pressed_ring_width="10dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Add contact #5."
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtshow5"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5099CC00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <com.it.app.CircleButton
+                    android:id="@+id/btnselect6"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_new"
+                    android:gravity="center_vertical"
+                    app:cb_color="#99CC00"
+                    app:cb_pressed_ring_width="10dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Add contact #6."
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtshow6"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5099CC00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <com.it.app.CircleButton
+                    android:id="@+id/btnselect7"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_new"
+                    android:gravity="center_vertical"
+                    app:cb_color="#99CC00"
+                    app:cb_pressed_ring_width="10dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Add contact #7."
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtshow7"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5099CC00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <com.it.app.CircleButton
+                    android:id="@+id/btnselect8"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_new"
+                    android:gravity="center_vertical"
+                    app:cb_color="#99CC00"
+                    app:cb_pressed_ring_width="10dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Add contact#8."
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtshow8"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5099CC00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <com.it.app.CircleButton
+                    android:id="@+id/btnselect9"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_new"
+                    android:gravity="center_vertical"
+                    app:cb_color="#99CC00"
+                    app:cb_pressed_ring_width="10dip" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Add contact #9."
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtshow9"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#5099CC00"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <com.it.app.CircleButton
+                    android:id="@+id/btnselect10"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/ic_action_new"
+                    android:gravity="center_vertical"
+                    app:cb_color="#99CC00"
+                    app:cb_pressed_ring_width="10dip" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="Add contact #10"
+                    android:gravity="center_vertical"
+                    android:id="@+id/txtshow10"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

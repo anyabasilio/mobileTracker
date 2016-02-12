@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/over_lay_image"
+        android:background="#2cc628"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/txtcode"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:hint="Enter Access Code"
+            android:textAlignment="center"
+            android:textColorHint="@android:color/white"
+            android:gravity="center"
+            android:textColorHighlight="@android:color/white"/>
+        <com.it.app.CircleButton
+            android:id="@+id/btnoff"
+            android:layout_width="fill_parent"
+            android:layout_height="130dip"
+            android:src="@drawable/ic_action2"
+            app:cb_color="#ffffff"
+            app:cb_pressed_ring_width="10dip" />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Press the white button."
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/linearLayout"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

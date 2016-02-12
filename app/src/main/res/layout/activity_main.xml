@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_vertical|center_horizontal"
+    android:padding="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#e10052"
+            android:layout_margin="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mess"
+                android:src="@drawable/imgmess"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#d622ae"
+        android:layout_margin="15dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/set"
+            android:src="@drawable/imgset"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="135dip"
+            android:orientation="horizontal">
+
+            <com.it.app.CircleButton
+                android:id="@+id/btn"
+                android:layout_width="fill_parent"
+                android:layout_height="130dip"
+                android:src="@drawable/ic_action_location_found"
+                app:cb_color="#99CC00"
+                app:cb_pressed_ring_width="10dip" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
